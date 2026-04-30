@@ -1,5 +1,8 @@
 {
-.appVersion = "3436";
+.appVersion = "3516";
+DisplayStrings = (
+"j/jdotless"
+);
 classes = (
 {
 automatic = 1;
@@ -70,6 +73,11 @@ features = (
 automatic = 1;
 code = "feature locl;\012feature ordn;\012";
 name = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_DFLT_1 {\012	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];\012	lookupflag UseMarkFilteringSet @CombiningTopAccents;\012	sub j' @CombiningTopAccents by jdotless;\012} ccmp_DFLT_1;\012";
+name = ccmp;
 },
 {
 automatic = 1;
@@ -5077,6 +5085,58 @@ nodes = (
 "195 0 LINE",
 "15 0 LINE",
 "15 -180 LINE"
+);
+}
+);
+width = 750;
+}
+);
+unicode = 0237;
+},
+{
+glyphname = jdotless;
+lastChange = "2026-04-30 13:07:28 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{375, -270}";
+},
+{
+name = top;
+position = "{375, 540}";
+}
+);
+background = {
+paths = (
+{
+closed = 0;
+nodes = (
+"615 540 LINE SMOOTH"
+);
+}
+);
+};
+layerId = "76DA76B7-AE51-4169-AB0E-317D7E08960F";
+paths = (
+{
+closed = 1;
+nodes = (
+"105 540 LINE",
+"105 360 LINE",
+"195 360 LINE",
+"195 0 LINE",
+"15 0 LINE",
+"15 -180 LINE",
+"555 -180 LINE SMOOTH",
+"654 -180 OFFCURVE",
+"735 -99 OFFCURVE",
+"735 0 CURVE SMOOTH",
+"735 400 LINE SMOOTH",
+"735 477 OFFCURVE",
+"672 540 OFFCURVE",
+"595 540 CURVE SMOOTH"
 );
 }
 );
