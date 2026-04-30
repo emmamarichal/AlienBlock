@@ -15248,16 +15248,6 @@ width = 570;
 );
 },
 {
-glyphname = .null;
-lastChange = "2026-04-30 13:08:34 +0000";
-layers = (
-{
-layerId = "76DA76B7-AE51-4169-AB0E-317D7E08960F";
-width = 0;
-}
-);
-},
-{
 glyphname = period;
 lastChange = "2026-04-30 13:08:34 +0000";
 layers = (
