@@ -10,7 +10,7 @@ tag = wght;
 classes = (
 {
 automatic = 1;
-code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Dcaron Dcroat Eth E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcedilla Gdotaccent H Hbar I Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcedilla L Lacute Lcaron Lcedilla Lslash M N Nacute Ncaron Ncedilla Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Oslash Otilde OE P Thorn Q R Racute Rcaron S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wadieresis Wcircumflex Wgrave X Y Yacute Yadieresis Ycircumflex Ygrave Z Zacute Zcaron Zdotaccent";
+code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Dcaron Dcroat Eth E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Oslash Otilde OE P Thorn Q R Racute Rcaron S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
 name = Uppercase;
 }
 );
@@ -79,6 +79,7 @@ automatic = 1;
 code = "lookup ccmp_DFLT_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
 } ccmp_DFLT_1;
 ";
@@ -1474,7 +1475,7 @@ unicode = 272;
 },
 {
 glyphname = Eth;
-lastChange = "2026-04-30 13:10:11 +0000";
+lastChange = "2026-04-30 13:17:57 +0000";
 layers = (
 {
 anchors = (
@@ -10600,81 +10601,6 @@ nodes = (
 (195,0,l),
 (15,0,l),
 (15,-180,l)
-);
-}
-);
-width = 750;
-}
-);
-unicode = 567;
-},
-{
-glyphname = jdotless;
-lastChange = "2026-04-30 13:10:11 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (375,-270);
-},
-{
-name = top;
-pos = (375,540);
-}
-);
-background = {
-anchors = (
-{
-name = bottom;
-pos = (375,-270);
-},
-{
-name = top;
-pos = (375,540);
-}
-);
-shapes = (
-{
-closed = 1;
-nodes = (
-(105,540,l),
-(105,360,l),
-(195,360,l),
-(195,0,l),
-(15,0,l),
-(15,-180,l),
-(555,-180,ls),
-(654,-180,o),
-(735,-99,o),
-(735,0,cs),
-(735,400,ls),
-(735,477,o),
-(672,540,o),
-(595,540,cs)
-);
-}
-);
-};
-layerId = "76DA76B7-AE51-4169-AB0E-317D7E08960F";
-shapes = (
-{
-closed = 1;
-nodes = (
-(105,540,l),
-(105,360,l),
-(195,360,l),
-(195,0,l),
-(15,0,l),
-(15,-180,l),
-(555,-180,ls),
-(654,-180,o),
-(735,-99,o),
-(735,0,cs),
-(735,400,ls),
-(735,477,o),
-(672,540,o),
-(595,540,cs)
 );
 }
 );
@@ -20394,13 +20320,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;
